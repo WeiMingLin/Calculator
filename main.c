@@ -4,11 +4,11 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-char inputbuffer[10];
+char inputbuffer[1024];
 char calculatorbuffer[1024];
 
 int main(int argc, char *argv[]) {
-	int counter = 0;
+/*	int counter = 0;
 	char get = getchar();
 	while(get != EOF) {
 		if(get != '\n') {
@@ -26,6 +26,11 @@ int main(int argc, char *argv[]) {
 			getexpression(calculatorbuffer);
 		}
 		get = getchar();
+	}
+*/
+	while(inputbuffer[0] != EOF){
+		getexpressoion(calculatorbuffer);
+		operation(calculatorbuffer);
 	}
 	
 	return 0;
